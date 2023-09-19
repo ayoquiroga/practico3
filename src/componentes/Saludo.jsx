@@ -1,20 +1,37 @@
 import React from 'react';
+import styled from 'styled-components';
 
 export const Saludo = ({nombre, mensaje, setMensaje}) => {
 
-    const handleVerificarNombre = () => {
+  const BUTTON = styled.button`
+      text-align: center;
+      background-color: bisque;
+      height: 45px;
+      width: 150px;
+      font-size: large;
+      border-radius: 7px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  `;
 
-        if ( nombre.trim() === '' ) {
-          setMensaje('Por favor, ingresa un nombre válido.');
-        } else {
-          setMensaje(`¡Bienvenido, ${nombre}!`);
-        }
-      };
+const P = styled.p`
+    font-size:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 7px;
+    color:green;
+`;
 
-      return ( <>
-        <button onClick={handleVerificarNombre}>Verificar Nombre</button>
-        <p>{mensaje}</p>
-        </>
+  const handleVerificarNombre = () => {
+
+    if ( nombre.trim() === '' ) {
+        setMensaje('Por favor, ingresa un nombre válido.');
+    } else {
+        setMensaje(`¡Bienvenido, ${nombre}!`);
+    }
+  };
+  return (<>
+            <BUTTON onClick={handleVerificarNombre}>Verificar Nombre</BUTTON>
+            <P>{mensaje}</P>
+          </>
       );
     
 }

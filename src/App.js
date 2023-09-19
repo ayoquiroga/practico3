@@ -5,6 +5,7 @@ import { Resultado } from './componentes/Resultado';
 import { Parciales } from './componentes/Parciales';
 import { Reiniciar } from './componentes/Reiniciar';
 import { Juego } from './componentes/Juego'
+import styled from 'styled-components';
 
 function App() {
   const [nombre, setNombre] = useState('');

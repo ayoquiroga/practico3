@@ -1,4 +1,14 @@
 import React, { useEffect } from 'react';
+import piedra from '../piedra.png';
+import papel from '../papel.png';
+import tijera from '../tijera.png';
+import styled from 'styled-components';
+
+const IMG = styled.img`
+    width: 25%;
+    border: solid #10100f;
+    border-radius: 12px;
+`;
 
 // Función para que la computadora elija una opción aleatoria
 function computadoraElige() {
@@ -48,9 +58,9 @@ export const Juego = ({nombre, setNombre, setMensaje, puntosJugador, puntosCompu
     return(<>
       <h2>Elige tu jugada:</h2>
       <div>
-        <button onClick={() => jugar('piedra')}>Piedra</button>
-        <button onClick={() => jugar('papel')}>Papel</button>
-        <button onClick={() => jugar('tijera')}>Tijera</button>
+        <button onClick={() => jugar('piedra')}><IMG alt='piedra' src={piedra} /></button>
+        <button onClick={() => jugar('papel')}><IMG alt='papel' src={papel} /></button>
+        <button onClick={() => jugar('tijera')}><IMG alt='tijera' src={tijera} /></button>
       </div>
     </>
     );
