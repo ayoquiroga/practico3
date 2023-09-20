@@ -7,8 +7,6 @@ const H1 =  styled.h1`
     padding-top: 25px;
     border-color: #10100f 3px solid;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 22px;   
-
 `;
 
 const LABEL = styled.label`
@@ -18,7 +16,6 @@ const LABEL = styled.label`
     border-radius: 7px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;   
-
 `;
 
 const INPUT = styled.input`
@@ -29,6 +26,7 @@ const INPUT = styled.input`
     color: rgb(179, 27, 88);
     border-radius: 7px;
 `;
+
 
 export const Nombre = ({nombre, setNombre}) => {
 

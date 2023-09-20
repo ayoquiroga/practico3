@@ -3,9 +3,8 @@ import { Nombre } from './componentes/Nombre';
 import { Saludo } from './componentes/Saludo';
 import { Resultado } from './componentes/Resultado';
 import { Parciales } from './componentes/Parciales';
-import { Reiniciar } from './componentes/Reiniciar';
 import { Juego } from './componentes/Juego'
-import styled from 'styled-components';
+// import { Reiniciar } from './componentes/Reiniciar';
 
 function App() {
   const [nombre, setNombre] = useState('');
@@ -22,7 +21,6 @@ function App() {
         <Juego nombre={nombre} setNombre={setNombre} setMensaje={setMensaje} puntosJugador={puntosJugador} puntosComputadora={puntosComputadora} setPuntosJugador={setPuntosJugador} setPuntosComputadora={setPuntosComputadora} setJugador={setJugador} setComputadora={setComputadora} />
         <Parciales nombre={nombre} jugador={jugador} computadora={computadora} />
         <Resultado puntosJugador={puntosJugador} puntosComputadora={puntosComputadora} nombre={nombre} />
-        {/* <Reiniciar nombre={nombre} setNombre={setNombre} puntosJugador={puntosJugador} puntosComputadora={puntosComputadora} setPuntosJugador={setPuntosJugador} setPuntosComputadora={setPuntosComputadora} setMensaje={setMensaje} /> */}
     </div>
   );
 }

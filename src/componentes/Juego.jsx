@@ -10,6 +10,16 @@ const IMG = styled.img`
     border-radius: 12px;
 `;
 
+const BUTTON = styled.button`
+    border: grey solid;
+    border-radius: 25px;
+    background-color: rgb(330, 343, 112);
+`;
+
+const DIV = styled.div`
+  text-align: center;
+`;
+
 // Función para que la computadora elija una opción aleatoria
 function computadoraElige() {
     const opciones = ['piedra', 'papel', 'tijera'];
@@ -57,11 +67,11 @@ export const Juego = ({nombre, setNombre, setMensaje, puntosJugador, puntosCompu
 
     return(<>
       <h2>Elige tu jugada:</h2>
-      <div>
-        <button onClick={() => jugar('piedra')}><IMG alt='piedra' src={piedra} /></button>
-        <button onClick={() => jugar('papel')}><IMG alt='papel' src={papel} /></button>
-        <button onClick={() => jugar('tijera')}><IMG alt='tijera' src={tijera} /></button>
-      </div>
+      <DIV>
+        <BUTTON onClick={() => jugar('piedra')}><IMG alt='piedra' src={piedra} /></BUTTON>
+        <BUTTON onClick={() => jugar('papel')}><IMG alt='papel' src={papel} /></BUTTON>
+        <BUTTON onClick={() => jugar('tijera')}><IMG alt='tijera' src={tijera} /></BUTTON>
+      </DIV>
     </>
     );
 }
