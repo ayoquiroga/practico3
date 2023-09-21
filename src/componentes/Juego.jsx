@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import piedra from '../piedra.png';
-import papel from '../papel.png';
-import tijera from '../tijera.png';
+import piedra from '../imgs/piedra.png';
+import papel from '../imgs/papel.png';
+import tijera from '../imgs/tijera.png';
 import styled from 'styled-components';
 
 const IMG = styled.img`

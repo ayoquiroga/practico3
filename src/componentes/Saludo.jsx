@@ -18,6 +18,7 @@ const P = styled.p`
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 7px;
     color:green;
+    text-align: center;
 `;
 
   const handleVerificarNombre = () => {
